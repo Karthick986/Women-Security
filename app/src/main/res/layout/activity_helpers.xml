@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpersActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpcom"
+        android:text="Helpers Community"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpImage"
+        android:src="@drawable/help"
+        android:padding="5dp"
+        android:layout_below="@id/helpcom"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpImage"
+        android:layout_above="@+id/linhelp"
+        android:id="@+id/scrollhelp"
+        android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supporting your local community can bring a whole host of benefits to you and the people around you. Lending a helping hand can help you to make new friends, learn new skills, advance your career and, most importantly, give something back."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are lots of volunteering opportunities out there. Look for things that appeal to you, things you have done before, things you are good at or things you’d like to try. It could even be the start of a new career path for you."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local businesses are an important part of local communities that are always under pressure from bigger national and multi-national competitors." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charity starts at home, and community starts with everyone around you. Many people suffer financial, physical or psychological problems in silence."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helping the community doesn’t have to mean donating time or money, charities can benefit from your unwanted possessions."/>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linhelp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/sent"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/helpwebbtn"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/landingpage"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/helpcall"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/phonecall"/>
+    </LinearLayout>
+</RelativeLayout>

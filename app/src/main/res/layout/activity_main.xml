@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtws"
+        android:text="Safety and Security"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtws"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/giveAlert"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:text="Give Alert"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@android:color/holo_orange_light"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/complaint"
+                android:layout_below="@+id/giveAlert"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:text="Complaint"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@android:color/holo_orange_light"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/help"
+                android:layout_below="@+id/complaint"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:text="Help and Support"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@android:color/holo_orange_light"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/guidelines"
+                android:layout_below="@+id/help"
+                android:layout_margin="20dp"
+                android:padding="20dp"
+                android:text="Guidelines"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:background="@android:color/holo_orange_light"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
